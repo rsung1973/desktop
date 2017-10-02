@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">桌面</string>
+    <string name="main_prompt_missed">未接来电xxyy条</string>
+    <string name="main_prompt_msg">未读留言xxyy条</string>
+    <string name="main_prompt_no_missed">未接来电</string>
+    <string name="main_prompt_no_msg">未读留言</string>
+    <string name="main_prompt_no_sms">未读信息</string>
+    <string name="main_prompt_sms">未读信息xxyy条</string>
+    <string name="main_quick_apps">应用程序</string>
+    <string name="main_quick_cloud">云社区</string>
+    <string name="main_quick_contacts">大門</string>
+    <string name="main_quick_elev">电梯联动</string>
+    <string name="main_quick_monitor">监视开锁</string>
+    <string name="main_quick_onoff">布/撤防</string>
+    <string name="main_quick_out">外出模式</string>
+    <string name="main_quick_player">数码相框</string>
+    <string name="main_quick_security">家居安防</string>
+    <string name="main_quick_smart">智能家居</string>
+    <string name="main_quick_sos">緊急</string>
+    <string name="main_quick_talk">视频对讲</string>
+    <string name="main_quick_weather">天气</string>
+    <string name="main_security_home">在家模式</string>
+    <string name="main_security_off">系统撤防</string>
+    <string name="main_security_out">外出模式</string>
+    <string name="main_security_sleep">就寝模式</string>
+    <string name="main_weather_humidity">"湿度: "</string>
+    <string name="main_weather_pm25">"PM2.5: "</string>
+    <string name="main_weather_quality">"空气质量: "</string>
+    <string name="main_weather_temp">"温度: "</string>
+    <string name="week1">星期日</string>
+    <string name="week2">星期一</string>
+    <string name="week3">星期二</string>
+    <string name="week4">星期三</string>
+    <string name="week5">星期四</string>
+    <string name="week6">星期五</string>
+    <string name="week7">星期六</string>
+</resources>

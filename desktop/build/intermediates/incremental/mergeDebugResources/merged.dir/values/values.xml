@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">desktop</string>
+    <string name="main_prompt_missed">Missed Calls xxyy.</string>
+    <string name="main_prompt_msg">Unread MSG xxyy.</string>
+    <string name="main_prompt_no_missed">No Missed Calls.</string>
+    <string name="main_prompt_no_msg">No Unread MSG.</string>
+    <string name="main_prompt_no_sms">No Unread SMS.</string>
+    <string name="main_prompt_sms">Unread SMS xxyy.</string>
+    <string name="main_quick_apps">Apps</string>
+    <string name="main_quick_cloud">Service</string>
+    <string name="main_quick_contacts">Door</string>
+    <string name="main_quick_elev">Elevator</string>
+    <string name="main_quick_monitor">Unlock</string>
+    <string name="main_quick_onoff">ON/OFF</string>
+    <string name="main_quick_out">Out</string>
+    <string name="main_quick_player">Player</string>
+    <string name="main_quick_security">Security</string>
+    <string name="main_quick_smart">Smart</string>
+    <string name="main_quick_sos">Emergency</string>
+    <string name="main_quick_talk">VOIP</string>
+    <string name="main_quick_weather">Weather</string>
+    <string name="main_security_home">Security HOME</string>
+    <string name="main_security_off">Security OFF</string>
+    <string name="main_security_out">Security OUT</string>
+    <string name="main_security_sleep">Security SLEEP</string>
+    <string name="main_weather_humidity">"RH: "</string>
+    <string name="main_weather_pm25">"PM2.5: "</string>
+    <string name="main_weather_quality">"Quality: "</string>
+    <string name="main_weather_temp">"TEMP: "</string>
+    <string name="week1">Sun.</string>
+    <string name="week2">Mon.</string>
+    <string name="week3">Tues.</string>
+    <string name="week4">Wed.</string>
+    <string name="week5">Thur.</string>
+    <string name="week6">Fri.</string>
+    <string name="week7">Sat.</string>
+</resources>

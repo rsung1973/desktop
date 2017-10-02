@@ -1,0 +1,508 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bkg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bkg">
+
+    <!--<ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />-->
+
+    <TextView
+        android:id="@+id/call_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_quick_group"
+        android:layout_alignLeft="@+id/main_quick_group"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:paddingBottom="5dp"
+        android:text="中興保全 服務電話：0800-22-11-95 處理單位代碼：E-22"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/main_q5_bkg"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_above="@+id/main_weather"
+        android:layout_alignLeft="@+id/main_weather"
+        android:layout_marginBottom="5dp">
+
+        <com.dnake.widget.Button2
+            android:id="@+id/main_quick_monitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_quick_monitor"
+            android:gravity="bottom|center"
+            android:paddingBottom="5dp"
+            android:text="@string/main_quick_monitor"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_q6_bkg"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_alignRight="@+id/main_weather"
+        android:layout_alignTop="@+id/main_q5_bkg">
+
+        <com.dnake.widget.Button2
+            android:id="@+id/main_quick_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_quick_contacts"
+            android:gravity="bottom|center"
+            android:paddingBottom="5dp"
+            android:text="@string/main_quick_contacts"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_q3_bkg"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_above="@+id/main_q5_bkg"
+        android:layout_alignLeft="@+id/main_q5_bkg"
+        android:layout_marginBottom="5dp">
+
+        <com.dnake.widget.Button2
+            android:id="@+id/main_quick_onoff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_quick_onoff"
+            android:gravity="bottom|center"
+            android:paddingBottom="5dp"
+            android:text="@string/main_quick_onoff"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_q4_bkg"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_alignLeft="@+id/main_q6_bkg"
+        android:layout_alignTop="@+id/main_q3_bkg">
+
+        <com.dnake.widget.Button2
+            android:id="@+id/main_quick_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_quick_cloud"
+            android:gravity="bottom|center"
+            android:paddingBottom="5dp"
+            android:text="@string/main_quick_cloud"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_q1_bkg"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_above="@+id/main_q3_bkg"
+        android:layout_alignLeft="@+id/main_q3_bkg"
+        android:layout_marginBottom="5dp">
+
+        <com.dnake.widget.Button2
+            android:id="@+id/main_quick_apps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/main_quick_apps"
+            android:gravity="bottom|center"
+            android:paddingBottom="5dp"
+            android:text="@string/main_quick_apps"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_q2_bkg"
+        android:layout_width="145dp"
+        android:layout_height="125dp"
+        android:layout_alignLeft="@+id/main_q4_bkg"
+        android:layout_alignTop="@+id/main_q1_bkg">
+
+        <com.dnake.widget.Button2
+            android:id="@+id/main_quick_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_quick_sos"
+            android:gravity="bottom|center"
+            android:paddingBottom="5dp"
+            android:text="@string/main_quick_sos"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_quick_group"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_alignTop="@+id/main_time_bkg"
+        android:layout_marginBottom="-300dp"
+        android:layout_toLeftOf="@+id/main_prompt_bkg">
+
+        <RelativeLayout
+            android:id="@+id/main_quick_elve_ly"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true">
+
+            <com.dnake.widget.Button2
+                android:id="@+id/main_quick_elev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_quick_elev"
+                android:gravity="bottom|left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/main_quick_elev"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_quick_smart_ly"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/main_quick_elve_ly"
+            android:layout_alignLeft="@+id/main_quick_elve_ly"
+            android:layout_marginBottom="5dp">
+
+            <com.dnake.widget.Button2
+                android:id="@+id/main_quick_smart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_quick_smart"
+                android:gravity="bottom|left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/main_quick_smart"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_quick_security_ly"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/main_quick_smart_ly"
+            android:layout_alignLeft="@+id/main_quick_smart_ly"
+            android:layout_marginBottom="5dp">
+
+            <com.dnake.widget.Button2
+                android:id="@+id/main_quick_security"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_quick_security"
+                android:gravity="bottom|left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/main_quick_security"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_quick_talk_ly"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/main_quick_security_ly"
+            android:layout_alignLeft="@+id/main_quick_security_ly"
+            android:layout_marginBottom="5dp">
+
+            <com.dnake.widget.Button2
+                android:id="@+id/main_quick_talk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/main_quick_talk"
+                android:gravity="bottom|left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/main_quick_talk"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_prompt_bkg"
+        android:layout_width="500dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/main_quick_group"
+        android:layout_alignLeft="@+id/main_time_bkg"
+        android:paddingLeft="1dp"
+        android:paddingRight="2dp">
+
+        <RelativeLayout
+            android:id="@+id/main_prompt_sms"
+            android:layout_width="220dp"
+            android:layout_height="120dp"
+            android:background="@drawable/main_prompt_sms"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/main_prompt_sms_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="@string/main_prompt_no_sms"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_prompt_talk"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/main_prompt_talk">
+
+            <TextView
+                android:id="@+id/main_prompt_talk_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="@string/main_prompt_no_missed"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_prompt_msg"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:background="@drawable/main_prompt_msg"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/main_prompt_sms">
+
+            <TextView
+                android:id="@+id/main_prompt_msg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="@string/main_prompt_no_msg"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_weather"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/main_prompt_bkg"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/main_prompt_bkg"
+        android:background="@drawable/main_weather">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/main_quick_weather"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/main_weather_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/main_weather_icon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/main_weather_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_weather_text"
+            android:layout_toRightOf="@+id/main_weather_icon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/main_weather_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_weather_text2"
+            android:layout_toRightOf="@+id/main_weather_icon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/main_weather_pm25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_weather_text3"
+            android:layout_toRightOf="@+id/main_weather_icon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/main_weather_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_weather_pm25"
+            android:layout_toRightOf="@+id/main_weather_icon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/main_weather_icon"
+            android:layout_width="145dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/main_weather_w1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/main_time_bkg"
+        android:layout_width="500dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="-200dp"
+        android:layout_toLeftOf="@+id/anchor"
+        android:background="@drawable/main_time_bkg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_time_anchor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/main_time_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="年"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/main_time_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="月"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/main_time_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/main_time_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="星期"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_time_anchor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/main_time_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="时"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/main_time_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="分"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_time_anchor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!--<ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/main_prompt_bkg"
+        android:layout_alignRight="@+id/main_weather"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/main_logo" />-->
+
+</RelativeLayout>
