@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
 	private int security = -1;
 
 	private HorizontalScrollView scroll;
+	private boolean currentAlarmed = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -178,17 +179,34 @@ public class MainActivity extends Activity {
 		});
 
 		b = (Button2) this.findViewById(R.id.main_quick_player);
-		b.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-//				Intent it = new Intent();
-//				it = getPackageManager().getLaunchIntentForPackage(
-//						"com.android.gallery3d");
-//				startActivity(it);
-                Intent it = new Intent("com.dnake.doorAlarm");
+//		b.setOnClickListener(new OnClickListener() {
+//			public void onClick(View v) {
+////				Intent it = new Intent();
+////				it = getPackageManager().getLaunchIntentForPackage(
+////						"com.android.gallery3d");
+////				startActivity(it);
+//                Intent it = new Intent("com.dnake.doorAlarm");
+////                it.putExtra("event", "com.dnake.boot");
+//                sendBroadcast(it);
+//			}
+//		});
+
+        b.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                if (currentAlarmed) {
+                    v.setBackgroundResource(R.drawable.main_quick_sos);
+                    currentAlarmed = false;
+                } else {
+                    v.setBackgroundResource(R.drawable.main_quick_sos_s);
+                    Intent it = new Intent("com.dnake.doorAlarm");
 //                it.putExtra("event", "com.dnake.boot");
-                sendBroadcast(it);
-			}
-		});
+                    sendBroadcast(it);
+                    currentAlarmed = true;
+                }
+                return true;
+            }
+        });
 		//
 		//
 		// b = (Button2) this.findViewById(R.id.main_quick_out);
