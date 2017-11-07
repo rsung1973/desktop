@@ -26,6 +26,12 @@
             <intent-filter>
                 <action android:name="com.dnake.broadcast" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="com.dnake.doorStatus" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.dnake.defenceStatus" />
+            </intent-filter>
         </receiver>
         <service android:name="com.dnake.desktop.SysService" >
         </service>

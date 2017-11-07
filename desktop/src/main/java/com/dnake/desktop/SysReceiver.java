@@ -13,6 +13,8 @@ public class SysReceiver extends BroadcastReceiver {
 	public static int miss_nread = 0;
 
 	public static int security = 0;
+	public static int doorStatus = 0;
+	public static int defenceStatus = 0;
 
 	@Override
 	public void onReceive(Context ctx, Intent it) {
@@ -34,6 +36,10 @@ public class SysReceiver extends BroadcastReceiver {
 			} else if (e.equals("com.dnake.talk.eHome.restart")) {
 				utils.eRestart = it.getStringExtra("package");
 			}
+		} else if(a.equals("com.dnake.doorStatus")) {
+			doorStatus = 1;
+		} else if(a.equals("com.dnake.defenceStatus")) {
+			defenceStatus = it.getIntExtra("status",0);
 		}
 	}
 }

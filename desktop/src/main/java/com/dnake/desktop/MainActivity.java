@@ -1,31 +1,22 @@
 package com.dnake.desktop;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Timer;
-
-import com.dnake.misc.AccuWeather;
-import com.dnake.v700.dxml;
-import com.dnake.v700.sys;
-import com.dnake.v700.utils;
-import com.dnake.widget.Button2;
-
-import android.R.integer;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -33,6 +24,16 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.dnake.misc.AccuWeather;
+import com.dnake.v700.dxml;
+import com.dnake.v700.sys;
+import com.dnake.v700.utils;
+import com.dnake.widget.Button2;
+
+import java.io.InputStream;
+import java.util.Calendar;
+import java.util.Timer;
 
 @SuppressLint({ "HandlerLeak", "DefaultLocale" })
 public class MainActivity extends Activity {
@@ -50,6 +51,7 @@ public class MainActivity extends Activity {
 
 	private HorizontalScrollView scroll;
 	private boolean currentAlarmed = false;
+//    private String doorStatusIdentFilter = "com.dnake.doorStatus";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -154,7 +156,11 @@ public class MainActivity extends Activity {
 						"com.dnake.security.DefenceLabel");
 				it.setComponent(comp);
 				it.setAction("android.intent.action.VIEW");
-				startActivity(it);
+				try {
+                    startActivity(it);
+                } catch (Exception ex) {
+				    Log.e("main_quick_onoff",ex.getMessage());
+                }
 			}
 		});
 
@@ -169,14 +175,22 @@ public class MainActivity extends Activity {
 		});
 
 		b = (Button2) this.findViewById(R.id.main_quick_contacts);
-		b.setOnClickListener(new OnClickListener() {
-			public void onClick(View v) {
-				Intent it = new Intent();
-				it = getPackageManager().getLaunchIntentForPackage(
-						"com.android.contacts");
-				startActivity(it);
-			}
-		});
+        b.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                v.setBackgroundResource(R.drawable.main_quick_contacts);
+                SysReceiver.doorStatus = 0;
+                return true;
+            }
+        });
+//		b.setOnClickListener(new OnClickListener() {
+//			public void onClick(View v) {
+//				Intent it = new Intent();
+//				it = getPackageManager().getLaunchIntentForPackage(
+//						"com.android.contacts");
+//				startActivity(it);
+//			}
+//		});
 
 		b = (Button2) this.findViewById(R.id.main_quick_player);
 //		b.setOnClickListener(new OnClickListener() {
@@ -301,7 +315,27 @@ public class MainActivity extends Activity {
 			Thread t = new Thread(pt);
 			t.start();
 		}
-	}
+
+//        registerReceiver(broadcastReceiver, new IntentFilter(doorStatusIdentFilter));
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Button2 b;
+        if(SysReceiver.doorStatus==1) {
+            b = (Button2) MainActivity.this.findViewById(R.id.main_quick_contacts);
+            b.setBackgroundResource(R.drawable.main_quick_door_opened);
+        }
+
+        b = (Button2) this.findViewById(R.id.main_quick_security);
+        if(SysReceiver.defenceStatus!=0) {
+            b.setTextColor(Color.argb(255,0,0,255));
+        } else {
+            b.setTextColor(Color.argb(255,255,255,255));
+        }
+    }
 
 	@Override
 	public void onStart() {
@@ -327,6 +361,7 @@ public class MainActivity extends Activity {
 	public void onDestroy() {
 		super.onDestroy();
 		this.tStop();
+//        unregisterReceiver(broadcastReceiver);
 	}
 
 	private Timer timer = null;
@@ -661,4 +696,13 @@ public class MainActivity extends Activity {
 			}
 		}
 	}
+
+//    BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+//        @Override
+//        public void onReceive(Context context, Intent intent) {
+//            Button2 b = (Button2) MainActivity.this.findViewById(R.id.main_quick_contacts);
+//            b.setBackgroundResource(R.drawable.main_quick_door_opened);
+//        }
+//    };
+
 }

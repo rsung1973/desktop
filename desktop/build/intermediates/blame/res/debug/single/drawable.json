@@ -56,12 +56,12 @@
         "source": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\drawable\\main_weather_w8.png"
     },
     {
-        "merged": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\res\\merged\\debug\\drawable\\main_q3_bkg.png",
-        "source": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\drawable\\main_q3_bkg.png"
-    },
-    {
         "merged": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\res\\merged\\debug\\drawable\\main_weather_w5.png",
         "source": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\drawable\\main_weather_w5.png"
+    },
+    {
+        "merged": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\res\\merged\\debug\\drawable\\main_q3_bkg.png",
+        "source": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\drawable\\main_q3_bkg.png"
     },
     {
         "merged": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\res\\merged\\debug\\drawable\\main_quick_sos.png",
@@ -98,6 +98,10 @@
     {
         "merged": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\res\\merged\\debug\\drawable\\main_quick_cloud.png",
         "source": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\drawable\\main_quick_cloud.png"
+    },
+    {
+        "merged": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\res\\merged\\debug\\drawable\\main_quick_sos_s.png",
+        "source": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\drawable\\main_quick_sos_s.png"
     },
     {
         "merged": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\res\\merged\\debug\\drawable\\main_quick_onoff.png",
