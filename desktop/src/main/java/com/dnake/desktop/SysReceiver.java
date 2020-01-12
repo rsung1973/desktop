@@ -37,9 +37,11 @@ public class SysReceiver extends BroadcastReceiver {
 				utils.eRestart = it.getStringExtra("package");
 			}
 		} else if(a.equals("com.dnake.doorStatus")) {
-			doorStatus = 1;
+			doorStatus = it.getIntExtra("status",0);
+			MainActivity.UpdateUI();
 		} else if(a.equals("com.dnake.defenceStatus")) {
 			defenceStatus = it.getIntExtra("status",0);
+			MainActivity.UpdateUI();
 		}
 	}
 }
