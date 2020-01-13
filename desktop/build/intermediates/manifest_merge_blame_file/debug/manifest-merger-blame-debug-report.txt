@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dnake.desktop"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6    <!--
+7<uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="17" />
+10    -->
+11    <uses-sdk
+11-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:10:5-17
+12        android:minSdkVersion="16"
+12-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:10:5-17
+13        android:targetSdkVersion="17" />
+13-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:10:5-17
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:12:5-67
+15-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:12:22-64
+16    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+16-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:13:5-78
+16-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:13:22-75
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:14:5-81
+17-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:14:22-78
+18    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+18-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:15:5-80
+18-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:15:22-77
+19    <uses-permission android:name="android.permission.GET_TASKS" />
+19-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:16:5-67
+19-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:16:22-65
+20
+21    <application
+21-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:18:5-62:19
+22        android:allowBackup="true"
+22-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:19:9-35
+23        android:debuggable="true"
+24        android:hardwareAccelerated="true"
+24-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:20:9-43
+25        android:icon="@drawable/ic_launcher"
+25-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:21:9-45
+26        android:label="@string/app_name" >
+26-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:22:9-41
+27        <receiver android:name="com.dnake.desktop.SysReceiver" >
+27-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:23:9-36:20
+27-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:23:19-63
+28            <intent-filter>
+28-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:24:13-26:29
+29                <action android:name="android.intent.action.BOOT_COMPLETED" />
+29-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:25:17-79
+29-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:25:25-76
+30            </intent-filter>
+31            <intent-filter>
+31-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:27:13-29:29
+32                <action android:name="com.dnake.broadcast" />
+32-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:28:17-62
+32-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:28:25-59
+33            </intent-filter>
+34            <intent-filter>
+34-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:30:13-32:29
+35                <action android:name="com.dnake.doorStatus" />
+35-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:31:17-63
+35-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:31:25-60
+36            </intent-filter>
+37            <intent-filter>
+37-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:33:13-35:29
+38                <action android:name="com.dnake.defenceStatus" />
+38-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:34:17-66
+38-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:34:25-63
+39            </intent-filter>
+40        </receiver>
+41
+42        <service android:name="com.dnake.desktop.SysService" >
+42-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:37:9-38:19
+42-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:37:18-61
+43        </service>
+44
+45        <activity
+45-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:40:9-52:20
+46            android:name="com.dnake.desktop.MainActivity"
+46-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:41:13-58
+47            android:launchMode="singleTask"
+47-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:42:13-44
+48            android:screenOrientation="landscape"
+48-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:43:13-50
+49            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+49-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:44:13-71
+50            <intent-filter>
+50-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:45:13-51:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:46:17-69
+51-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:46:25-66
+52
+53                <category android:name="android.intent.category.HOME" />
+53-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:48:17-73
+53-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:48:27-70
+54                <category android:name="android.intent.category.DEFAULT" />
+54-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:49:17-76
+54-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:49:27-73
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:50:17-77
+55-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:50:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:53:9-61:20
+59            android:name="com.dnake.desktop.AppsLabel"
+59-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:54:13-55
+60            android:launchMode="singleTask"
+60-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:55:13-44
+61            android:screenOrientation="landscape"
+61-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:56:13-50
+62            android:theme="@android:style/Theme.NoTitleBar" >
+62-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:57:13-60
+63            <intent-filter>
+63-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:58:13-60:29
+64                <action android:name="com.dnake.desktop.AppsLabel" />
+64-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:59:17-70
+64-->C:\Project\Android\Awtek\AW902S9\desktop\desktop\src\main\AndroidManifest.xml:59:25-67
+65            </intent-filter>
+66        </activity>
+67    </application>
+68
+69</manifest>

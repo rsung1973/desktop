@@ -1,4 +1,0 @@
-#Wed Nov 08 00:43:36 CST 2017
-base.0=D\:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-renamed.0=classes.dex
-file.0=D\:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

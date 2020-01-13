@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Project\Android\Awtek\AW902S9\desktop\desktop\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3fb9f79d28608dce39e2d4abade0650fcb38ccda">
+        <dex dex="D:\Project\Android\Awtek\AW902S9\desktop\desktop\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1748c7a113215afcd347900f4ceea5de8e371041\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\Project\Android\Awtek\AW902S9\desktop\desktop\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_4b5a6ed7e9e22e88e5c55e2e8f15ad0f8f4e50c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Project\Android\Awtek\AW902S9\desktop\desktop\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Project\Android\Awtek\AW902S9\desktop\desktop\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ef1f992e471ca927d56dd88aec760b7451d96136\classes.dex" />
+    </item>
+
+</items>

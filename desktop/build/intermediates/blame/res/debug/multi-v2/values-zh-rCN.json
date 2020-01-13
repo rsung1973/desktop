@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
+            "outputFile": "C:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
             "map": [
                 {
-                    "source": "D:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "source": "C:\\Project\\Android\\Awtek\\AW902S9\\desktop\\desktop\\src\\main\\res\\values-zh-rCN\\strings.xml",
                     "from": {
                         "startLines": "3,5,7,4,6,8,9,17,19,18,11,15,22,16,20,13,12,21,14,23,27,25,26,28,31,33,32,30,35,36,37,38,39,40,41",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,1,1,1,1,1,1",

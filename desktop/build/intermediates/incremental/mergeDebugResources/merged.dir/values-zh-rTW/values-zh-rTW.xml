@@ -4,8 +4,8 @@
     <string name="main_prompt_missed">未接xxyy個</string>
     <string name="main_prompt_msg">留言xxyy則</string>
     <string name="main_prompt_no_missed">未接來電</string>
-    <string name="main_prompt_no_msg">未讀留言</string>
-    <string name="main_prompt_no_sms">未讀信息</string>
+    <string name="main_prompt_no_msg">訪客資訊</string>
+    <string name="main_prompt_no_sms">公告訊息</string>
     <string name="main_prompt_sms">信息xxyy則</string>
     <string name="main_quick_apps">應用程式</string>
     <string name="main_quick_cloud">社區服務</string>

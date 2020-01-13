@@ -126,19 +126,6 @@ public class MainActivity extends Activity {
 //        b.setText("");
 //        //
 
-        //管理中心快速撥號
-        b.setBackgroundResource(R.drawable.controll_center_talk);
-        b.setText("管理中心1999");
-
-        b.setOnClickListener(new OnClickListener() {
-            public void onClick(View v) {
-                Intent it = new Intent("com.dnake.quickCall");
-                it.putExtra("call_id", "1999");
-                sendBroadcast(it);
-            }
-        });
-        //
-/*
         b.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent();
@@ -149,10 +136,9 @@ public class MainActivity extends Activity {
                 startActivity(it);
             }
         });
-*/
 
         b = (Button2) this.findViewById(R.id.main_quick_smart);
-        b.setOnClickListener(new OnClickListener() {
+/*        b.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent it;
                 if (addedSmartApp) {
@@ -165,7 +151,20 @@ public class MainActivity extends Activity {
                     startActivity(it);
                 }
             }
+        });*/
+
+        //管理中心快速撥號
+        b.setBackgroundResource(R.drawable.controll_center_talk);
+        b.setText("管理中心1999");
+
+        b.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent("com.dnake.quickCall");
+                it.putExtra("call_id", "1999");
+                sendBroadcast(it);
+            }
         });
+        //
 
         try {
             PackageManager pm = getPackageManager();

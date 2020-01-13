@@ -1,1 +1,1 @@
-[{"outputType":{"type":"APK"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1},"path":"desktop-debug.apk","properties":{"packageId":"com.dnake.desktop","split":"","minSdkVersion":"16"}}]
+[{"outputType":{"type":"APK"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"desktop-debug.apk","fullName":"debug","baseName":"debug"},"path":"desktop-debug.apk","properties":{}}]
