@@ -503,6 +503,7 @@
         android:layout_below="@+id/main_prompt_bkg"
         android:layout_alignRight="@+id/main_weather"
         android:layout_marginTop="20dp"
-        android:src="@drawable/main_logo" />
+        android:src="@drawable/main_logo"
+        android:visibility="gone" />
 
 </RelativeLayout>
